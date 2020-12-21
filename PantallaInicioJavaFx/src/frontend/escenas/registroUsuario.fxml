@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="664.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.controllers.ControllerRegUsuario">
+   <children>
+      <TextField fx:id="nombreDelUsuario" layoutX="53.0" layoutY="102.0" promptText="Nombre" />
+      <TextField fx:id="apellido1DelUsuario" layoutX="53.0" layoutY="161.0" promptText="Apellido1" />
+      <TextField fx:id="apellido2DelUsuario" layoutX="53.0" layoutY="220.0" promptText="Apellido2" />
+      <TextField fx:id="idenfiticacionDelUsuario" layoutX="53.0" layoutY="279.0" promptText="Identificación" />
+      <TextField fx:id="paisProcedencia" layoutX="53.0" layoutY="338.0" promptText="País de procedencia" />
+      <Text fill="WHITE" layoutX="434.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SINGwith!...">
+         <font>
+            <Font name="Futura Medium" size="36.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="53.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" />
+      <Text fill="WHITE" layoutX="53.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Primer Apellido" />
+      <Text fill="WHITE" layoutX="54.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Segundo Apellido" />
+      <Text fill="WHITE" layoutX="53.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero de identificación" />
+      <Text fill="WHITE" layoutX="55.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="País de Procedencia" />
+      <TextField fx:id="edad" layoutX="246.0" layoutY="102.0" promptText="Edad" />
+      <Text fill="WHITE" layoutX="247.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edad" />
+      <TextField fx:id="correoElectronico" layoutX="243.0" layoutY="161.0" promptText="Correo Electrónico" />
+      <Text fill="WHITE" layoutX="245.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Correo Electrónico" />
+      <TextField fx:id="fotografia" layoutX="243.0" layoutY="220.0" promptText="Fotografía" />
+      <Text fill="WHITE" layoutX="244.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fotografía" />
+      <TextField fx:id="nombreIngresoUsuario" layoutX="242.0" layoutY="279.0" promptText="Nombre Usuario" />
+      <Text fill="WHITE" layoutX="244.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre de Usuario" />
+      <TextField fx:id="contrasennaIngresoUsuario" layoutX="243.0" layoutY="338.0" promptText="Contraseña Usuario" />
+      <Text fill="WHITE" layoutX="245.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña" />
+      <Text fill="#e8de0e" layoutX="53.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registro de Usuario">
+         <font>
+            <Font name="Avenir Book" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="registrarUsuario" layoutX="435.0" layoutY="341.0" mnemonicParsing="false" onAction="#registrarUsuario" style="-fx-background-color: #e8de0e#e8de0e;" text="Registrar">
+         <font>
+            <Font name="Franklin Gothic Book" size="12.0" />
+         </font>
+      </Button>
+      <Text fx:id="regresar" fill="WHITE" layoutX="584.0" layoutY="360.0" onMouseClicked="#back" strokeType="OUTSIDE" strokeWidth="0.0" text="Regresar">
+         <font>
+            <Font name="Avenir Book" size="12.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

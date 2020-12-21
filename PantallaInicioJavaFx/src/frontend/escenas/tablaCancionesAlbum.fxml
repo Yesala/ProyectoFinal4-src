@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="395.0" prefWidth="664.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.controllers.ControllerTablaAlbumCancion">
+   <children>
+      <TableView fx:id="tablaAlbumCancion" layoutX="233.0" layoutY="105.0" prefHeight="236.0" prefWidth="284.0" style="-fx-background-color: #8e9ba5  #8e9ba5;">
+         <columns>
+            <TableColumn fx:id="columnaNombreAlbum" prefWidth="118.0" text="Nombre Album" />
+            <TableColumn fx:id="columnaNombreCancion" prefWidth="175.0" text="Canción" />
+         </columns>
+      </TableView>
+      <Text fill="WHITE" layoutX="100.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Album-Canciones">
+         <font>
+            <Font name="Avenir Book" size="18.0" />
+         </font>
+      </Text>
+      <Line endX="308.0" layoutX="313.0" layoutY="58.0" startX="-61.0" stroke="#e8de0e" />
+      <Text fill="WHITE" layoutX="574.0" layoutY="82.0" onMouseClicked="#regresarHome" strokeType="OUTSIDE" strokeWidth="0.0" text="Regresar">
+         <font>
+            <Font name="Avenir Book" size="12.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="27.0" fitWidth="28.0" layoutX="66.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../recursos/img/album-1-1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="395.0" prefWidth="665.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.controllers.ControllerListaArtistas">
+   <children>
+      <TableView fx:id="tablaArtistas" layoutX="119.0" layoutY="99.0" prefHeight="236.0" prefWidth="438.0" style="-fx-background-color: #8e9ba5  #8e9ba5;">
+         <columns>
+            <TableColumn fx:id="columnaAliasArtista" prefWidth="127.0" text="Alias artista" />
+            <TableColumn fx:id="columnaPaisNacArtista" prefWidth="147.0" text="País nacimiento" />
+            <TableColumn fx:id="columnaEdadArtista" prefWidth="51.0" text="Edad" />
+            <TableColumn fx:id="columnaGeneroArtista" prefWidth="112.0" text="Género musical" />
+         </columns>
+      </TableView>
+      <Text fill="WHITE" layoutX="90.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Artistas">
+         <font>
+            <Font name="Avenir Book" size="18.0" />
+         </font>
+      </Text>
+      <Line endX="308.0" layoutX="303.0" layoutY="48.0" startX="-144.5" stroke="#e8de0e" />
+      <Text fill="WHITE" layoutX="564.0" layoutY="68.0" onMouseClicked="#regresarHome" strokeType="OUTSIDE" strokeWidth="0.0" text="Regresar">
+         <font>
+            <Font name="Avenir Book" size="12.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="32.0" fitWidth="40.0" layoutX="55.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../recursos/img/artista.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

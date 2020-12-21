@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="395.0" prefWidth="664.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.controllers.ControllerHome">
+   <children>
+      <AnchorPane fx:id="panelCuenta" layoutX="703.0" layoutY="47.0" prefHeight="74.0" prefWidth="127.0" style="-fx-background-color: #17d198;" visible="false">
+         <children>
+            <Text fill="WHITE" layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cuenta" underline="true">
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Text>
+            <Text fill="WHITE" layoutX="14.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cerrar sesion" underline="true">
+               <font>
+                  <Font name="Roboto" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Text fx:id="agregarCompositor" fill="WHITE" layoutX="404.0" layoutY="351.0" onMouseClicked="#agregarCompositor" strokeType="OUTSIDE" strokeWidth="0.0" text="+ Agregar Compositor" wrappingWidth="134.8896484375">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Text>
+      <Text fx:id="agregarGenero" fill="WHITE" layoutX="264.0" layoutY="351.0" onMouseClicked="#agregarGenero" strokeType="OUTSIDE" strokeWidth="0.0" text="+ Agregar Género" wrappingWidth="134.8896484375">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Text>
+      <Text fx:id="Library1" fill="#9d9484" layoutX="108.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tienda">
+         <font>
+            <Font name="Avenir Book" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Text>
+      <Text fx:id="tiendaCanciones" fill="WHITE" layoutX="128.0" layoutY="184.0" onMouseClicked="#tienda" strokeType="OUTSIDE" strokeWidth="0.0" text="Tienda SINGwith!" wrappingWidth="134.8896484375">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Text>
+      <Text fx:id="Library" fill="#9d9484" layoutX="444.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Biblioteca">
+         <font>
+            <Font name="Avenir Book" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Text>
+      <Text fx:id="listaSongs" fill="WHITE" layoutX="466.0" layoutY="187.0" onMouseClicked="#listSongs" strokeType="OUTSIDE" strokeWidth="0.0" text="Canciones" wrappingWidth="134.8896484375">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Text>
+      <Text fx:id="listaAlbums" fill="WHITE" layoutX="468.0" layoutY="212.0" onMouseClicked="#listarAlbums" strokeType="OUTSIDE" strokeWidth="0.0" text="Albums" wrappingWidth="134.8896484375">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Text>
+      <Text fx:id="listaArtistas" fill="WHITE" layoutX="468.0" layoutY="238.0" onMouseClicked="#listarArtistas" strokeType="OUTSIDE" strokeWidth="0.0" text="Artistas" wrappingWidth="134.8896484375">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Text>
+      <Text fx:id="Playislit" fill="#9d9484" layoutX="270.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Playlists">
+         <font>
+            <Font name="Avenir Book" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Text>
+      <Text fx:id="crearLista" fill="WHITE" layoutX="295.0" layoutY="185.0" onMouseClicked="#agregarLista" strokeType="OUTSIDE" strokeWidth="0.0" text="Crear lista" wrappingWidth="80.8896484375">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Text>
+      <Text fx:id="verListas" fill="WHITE" layoutX="296.0" layoutY="212.0" onMouseClicked="#verListas" strokeType="OUTSIDE" strokeWidth="0.0" text="Playlist general" wrappingWidth="114.08799743652344">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Text>
+      <Text fx:id="agregarCancion" fill="WHITE" layoutX="193.0" layoutY="309.0" onMouseClicked="#agregarCancion" strokeType="OUTSIDE" strokeWidth="0.0" text="+ Añadir canción" wrappingWidth="99.61523437499989">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Text>
+      <Text fx:id="crearAlbum" fill="WHITE" layoutX="345.0" layoutY="309.0" onMouseClicked="#agregarAlbum" strokeType="OUTSIDE" strokeWidth="0.0" text="+ Crear album" wrappingWidth="86.8896484375">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Text>
+      <Text fx:id="agregarArtista" fill="WHITE" layoutX="126.0" layoutY="351.0" onMouseClicked="#agregarArtista" strokeType="OUTSIDE" strokeWidth="0.0" text="+ Agregar Artista" wrappingWidth="134.8896484375">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Text>
+      <Line endX="450.5" layoutX="154.0" layoutY="326.0" startX="-100.0" stroke="#e8de0e" />
+      <Line endX="155.0" endY="222.0" layoutX="95.0" layoutY="133.0" startX="155.0" startY="205.0" stroke="WHITE" />
+      <Line endX="155.0" endY="222.0" layoutX="232.0" layoutY="133.0" startX="155.0" startY="205.0" stroke="WHITE" />
+      <Text fx:id="cerrarSesion" fill="WHITE" layoutX="546.0" layoutY="77.0" onMouseClicked="#closeSesion" strokeType="OUTSIDE" strokeWidth="0.0" text="Cerrar sesión">
+         <font>
+            <Font name="Avenir Book" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#e8de0e" layoutX="44.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SINGwith!...">
+         <font>
+            <Font name="Futura Medium" size="36.0" />
+         </font>
+      </Text>
+      <TextField layoutX="361.0" layoutY="50.0" prefHeight="15.0" prefWidth="164.0" promptText="Buscar canciones...">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="439.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../recursos/img/cancion.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="16.0" fitWidth="21.0" layoutX="441.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../recursos/img/album-1-1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="439.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../recursos/img/artista.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="18.0" fitWidth="21.0" layoutX="269.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../recursos/img/lista.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="34.0" layoutX="565.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../recursos/img/perfil.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="verListas1" fill="WHITE" layoutX="296.0" layoutY="238.0" onMouseClicked="#verTablaCancionesLista" strokeType="OUTSIDE" strokeWidth="0.0" text="Playlist+Canciones" wrappingWidth="114.08799743652344">
+         <font>
+            <Font name="Avenir Book" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Text>
+      <ImageView fitHeight="18.0" fitWidth="23.0" layoutX="269.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../recursos/img/playlist.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="22.0" fitWidth="31.0" layoutX="266.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../recursos/img/addplaylist.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="18.0" fitWidth="21.0" layoutX="106.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../recursos/img/tienda%20copy.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
